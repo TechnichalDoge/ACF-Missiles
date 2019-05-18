@@ -255,13 +255,13 @@ ACF_defineGun("AGM-45 ASM", { --id
 
     ent         = "acf_missile_to_rack", -- A workaround ent which spawns an appropriate rack for the missile.
     guidance    = {"Dumb", "Radar", "Laser"},
-    fuses       = {"Contact", "Timed"}, 
+    fuses       = {"Contact", "Timed"},
 
     racks       = {["1xRK"] = true, ["2xRK"] = true, ["3xRK"] = true, ["4xRK"] = true, ["6xUARRK"] = true},    -- a whitelist for racks that this missile can load into.  can also be a 'function(bulletData, rackEntity) return boolean end'
 
 	seekcone = 5,		--why do you need a big seeker cone if yuo're firing vs a SAM site?
 	viewcone = 10,		--I don't think a fucking SAM site should have to dodge much >_>
-	
+
     agility     = 0.08,		-- multiplier for missile turn-rate.
     armdelay    = 0.3     -- minimum fuse arming delay
 } )
@@ -315,7 +315,7 @@ ACF_defineGun("AT-2 ASM", { --id
 	gunclass = "ASM",
     rack = "1xRK",  -- Which rack to spawn this missile on?
 	length = 55,		--Used for the physics calculations
-	caliber = 16, 
+	caliber = 16,
 	weight = 27,    -- Don't scale down the weight though!
 	year = 1969,
 	rofmod = 0.9,
@@ -346,7 +346,7 @@ ACF_defineGun("AT-2 ASM", { --id
 } )
 
 -- The AGM-119, a heavy antiship missile
---[[
+
 ACF_defineGun("AGM-119 ASM", { --id
 	name = "AGM-119 Penguin Missile",
 	desc = "An antiship missile, capable of delivering a massive punch versus ships or fixed targets.\nAlthough maneuverable and dangerous, it is very heavy and large, with only its laser-guided variant being able to engage moving targets.",
@@ -386,4 +386,3 @@ ACF_defineGun("AGM-119 ASM", { --id
 	agility     = 0.1,		-- multiplier for missile turn-rate.
     armdelay    = 0.3     -- minimum fuse arming delay
 } )
-]]--

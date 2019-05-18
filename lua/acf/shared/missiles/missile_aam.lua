@@ -32,7 +32,6 @@ ACF_defineGunClass("AAM", {
 --      AAMs should be more agile than SAMs of equivalent caliber.
 --      AAMs should have larger viewcones than SAMs of equivalent caliber.
 
---[[
 -- Not based on any real missile - this is for smaller aircraft.
 -- Balance the round in line with the 40mm pod rocket.
 ACF_defineGun("40mmAAM", { --id
@@ -69,7 +68,6 @@ ACF_defineGun("40mmAAM", { --id
 
     agility     = 1     -- multiplier for missile turn-rate.
 } )
-]]
 
 -- The sidewinder analogue. we have to scale it down because acf is scaled down.
 ACF_defineGun("AIM-9 AAM", { --id

@@ -1,4 +1,4 @@
-	
+
 --define the class
 ACF_defineGunClass("UAR", {
     type            = "missile",
@@ -261,7 +261,6 @@ ACF_defineGun("RW61 ASR", { --id
     armdelay    = 0.5     -- minimum fuse arming delay
 } )
 
---[[
 ACF_defineGun("298mmDUMB", { --id placeholder for tinytim
 
 	name		= "298mm Rocket",
@@ -304,8 +303,6 @@ ACF_defineGun("298mmDUMB", { --id placeholder for tinytim
     agility     = 1,     -- multiplier for missile turn-rate.
     armdelay    = 0.3     -- minimum fuse arming delay
 } )
-
-]]
 
 
 

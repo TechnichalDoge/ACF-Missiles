@@ -38,7 +38,7 @@ ACF_defineGun("FIM-92 SAM", { --id
 		armour		= 3,			-- effective armour thickness of casing, in mm
 		propweight	= 1.5,	        -- motor mass - motor casing
 		thrust		= 7000,	    -- average thrust - kg*in/s^2			--was 120000
-		burnrate	= 1000,	        -- cm^3/s at average chamber pressure	
+		burnrate	= 1000,	        -- cm^3/s at average chamber pressure
 		starterpct	= 0.3,         	-- percentage of the propellant consumed in the starter motor.	--was 0.2
 		minspeed	= 3000,		-- minimum speed beyond which the fins work at 100% efficiency	--was 15000
 		dragcoef	= 0.001,		-- drag coefficient while falling
@@ -79,11 +79,11 @@ ACF_defineGun("Strela-1 SAM", { --id
 		casing		= 0.05,	        -- thickness of missile casing, cm
 		armour		= 5,			-- effective armour thickness of casing, in mm
 		propweight	= 1,	        -- motor mass - motor casing
-		thrust		= 4000,	    -- average thrust - kg*in/s^2		
-		burnrate	= 400,	        -- cm^3/s at average chamber pressure	
+		thrust		= 4000,	    -- average thrust - kg*in/s^2
+		burnrate	= 400,	        -- cm^3/s at average chamber pressure
 		starterpct	= 0.1,         	-- percentage of the propellant consumed in the starter motor.
-		minspeed	= 4000,		-- minimum speed beyond which the fins work at 100% efficiency	
-		dragcoef	= 0.003,		-- drag coefficient while falling	
+		minspeed	= 4000,		-- minimum speed beyond which the fins work at 100% efficiency
+		dragcoef	= 0.003,		-- drag coefficient while falling
                 dragcoefflight  = 0,                 -- drag coefficient during flight
 		finmul		= 0.03				-- fin multiplier (mostly used for unpropelled guidance)
 	},
@@ -94,15 +94,14 @@ ACF_defineGun("Strela-1 SAM", { --id
 
 	racks       = {["1x Strela-1"] = true,  ["2x Strela-1"] = true,  ["4x Strela-1"] = true},   -- a whitelist for racks that this missile can load into.  can also be a 'function(bulletData, rackEntity) return boolean end'
 
-    seekcone    = 20,   -- getting inside this cone will get you locked.  Divided by 2 ('seekcone = 40' means 80 degrees total.) 
-    viewcone    = 40,   -- getting outside this cone will break the lock.  Divided by 2.	
+    seekcone    = 20,   -- getting inside this cone will get you locked.  Divided by 2 ('seekcone = 40' means 80 degrees total.)
+    viewcone    = 40,   -- getting outside this cone will break the lock.  Divided by 2.
 
-    agility     = 2,     -- multiplier for missile turn-rate.	
-    armdelay    = 0.2     -- minimum fuse arming delay	
+    agility     = 2,     -- multiplier for missile turn-rate.
+    armdelay    = 0.2     -- minimum fuse arming delay
 } )
 
--- The SIMBAD-RC is a 2-tube point-defense missile system taht's basicaly like 2 stingers shooting missiles 
---[[
+-- The SIMBAD-RC is a 2-tube point-defense missile system taht's basicaly like 2 stingers shooting missiles
 ACF_defineGun("SIMBAD-RC SAM", { --id
 	name = "SIMBAD Missile",
 	desc = "A point defense antimissile system, built from an antiaircraft missile launcher.  It can only intercept missiles, but is VERY fast.",
@@ -123,7 +122,7 @@ ACF_defineGun("SIMBAD-RC SAM", { --id
 		armour		= 3,			-- effective armour thickness of casing, in mm
 		propweight	= 1.5,	        -- motor mass - motor casing
 		thrust		= 20000,	    -- average thrust - kg*in/s^2			--was 120000
-		burnrate	= 500,	        -- cm^3/s at average chamber pressure	
+		burnrate	= 500,	        -- cm^3/s at average chamber pressure
 		starterpct	= 0.25,         	-- percentage of the propellant consumed in the starter motor.	--was 0.2
 		minspeed	= 2500,		-- minimum speed beyond which the fins work at 100% efficiency	--was 15000
 		dragcoef	= 0.01,		-- drag coefficient while falling
@@ -143,4 +142,3 @@ ACF_defineGun("SIMBAD-RC SAM", { --id
     agility     = 5,     -- multiplier for missile turn-rate.		--was 1
     armdelay    = 0.1     -- minimum fuse arming delay		-was 0.3
 } )
-]]--
